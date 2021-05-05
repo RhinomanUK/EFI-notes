@@ -1,0 +1,18 @@
+RPM = ns in min / revolution time
+
+
+revolution time = CASCount * 250ns * 2 pulses per RPM
+
+ns in min = 1,000,000,000 * 60
+
+
+RPM = 60,000,000,000 / (500 * CASCount)
+
+RPM = 120,000,000 / CASCount
+
+
+ie 100Hz = 200 pps = 6000ppm = 3000 rpm
+
+
+
+
