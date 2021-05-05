@@ -1,0 +1,33 @@
+TC4424 power calcs
+
+Output impedance = 3.5R typ. 5R max.
+
+max. dissipation = 470mW (70C)
+Tj max. = 150C
+
+THja = 125C/W
+
+at 70C
+
+125-70 = 55C
+
+55/125 = 0.44W (both channels)
+
+@ 5R
+	0.44/5 = 88mA
+	
+per channel = 44mA continuous
+
+Wasted spark 4-cyl
+
+@7000rpm, 2 sparks/rev @3ms 
+
+7000rpm = 116.67Hz = 8.6ms
+
+6/8.6 = 70% duty cycle
+
+44mA/0.7 = 63mA
+
+
+
+
