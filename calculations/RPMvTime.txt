@@ -1,0 +1,8 @@
+Mazda example
+
+4-cylinder, 2 CAS events per Rev, 2us tick
+n = CAS count
+
+rps = 1/(2*n*tick)
+rpm = 60/(2*2us*n)
+rpm = 15000000/n
