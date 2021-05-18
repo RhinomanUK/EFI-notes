@@ -1,0 +1,29 @@
+Notes on the DEVKIT-MPC5744
+
+RGB LED:
+	red 	= PC11 - eTimer0_CH4
+	green 	= PC12 - eTimer0_CH5
+	blue 	= PC13 - eTimer1_CH1
+	
+	eTimer is the motor control timer
+	
+	
+	main.c
+		init system?
+		init a then b then c 
+		reun
+		
+
+	adc.c	    - Knock measurement
+	filter.c	- 4th order IIR
+	eTimer.c    - LED driver
+			Green -> Red
+				Green = 0x0000 to 0xFFFF
+				Red = 0xFFFF to 0x0000
+	CANBus.c	- comms
+	UART.c		- comms
+	
+	
+	
+	
+	
