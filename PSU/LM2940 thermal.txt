@@ -2,25 +2,25 @@ For comparison purposes only - do not use an LM2940 in an EFI!!!!!
 
 LM2940 thermal
 
+from datasheet:
 Tj max = 150C
-THja typ 62.5C (typical TO220 package)
+The value of R θJA (for devices in still air with no heatsink) is 23.3°C/W for the TO-220 package (page 4)
+however this is contrdicted by the max. power dissipation of 1W at 100C which implies 50 C/W (figure 23)
+For comparison an LM7805 is rated at 23.9C/W so 23.3C/W is not unfeasible - maybe they have already de-rated to Tj = 125 for reliabilty.
 
-De-rate Tj to 125C
+For automotive use de-rate Tj to 125C for reliability.
+if we assume max. ambient = 50C, but we allow a 75C rise
+75/23.3 = 3.22W
 
-max. ambient = 50C, allow 75C rise
-75/62.5 = 1.2W
+At 16V (max. continuous ISO 16750)
+16-5 = 9V drop
+Imax = 3.22W/9V = 358mA
 
-At 18V
-18-5 = 13V drop
-Imax = 1.2/13 = 92.3mA
-
-heatsink required!!!!
+With a heatsink:
 
 from LM2940 datasheet:
 using a heatsink with RTHsa = 21.7C/W
 and 1.1C/W Thjc (bottom) then:
 
 75/(21.7+1.1) = 3.29W
-1.2/3.29 = 367mA
-
-
+3.29W/9V = 365mA
