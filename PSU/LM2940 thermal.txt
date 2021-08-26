@@ -5,7 +5,13 @@ LM2940 thermal
 from datasheet:
 Tj max = 150C
 The value of R θJA (for devices in still air with no heatsink) is 23.3°C/W for the TO-220 package (page 4)
-however this is contrdicted by the max. power dissipation of 1W at 100C which implies 50 C/W (figure 23)
+however this is contradicted by the max. power dissipation of 1W at 100C which implies 50 C/W (figure 23)
+The note on page 18 states:
+    "If the maximum allowable value for RθJA is found to be ≥ 23.3°C/W for the TO-220
+  package (with a heatsink of 21.7°C/W RθSA) ...... no heatsink is needed since the package alone
+  will dissipate enough heat to satisfy these requirements."
+In section 6.4 Rθjc(bot) is stated as 1.1C/W, 1.1 + 21.7 = 22.8C/W which implies Rθcs =   0.5C/W.
+
 For comparison an LM7805 is rated at 23.9C/W so 23.3C/W is not unfeasible - maybe they have already de-rated to Tj = 125 for reliabilty.
 
 For automotive use de-rate Tj to 125C for reliability.
