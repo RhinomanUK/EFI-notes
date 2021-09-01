@@ -29,7 +29,7 @@ using a heatsink with RTHsa = 10C/W and assuming Rθcs = 2C/W
 and 1.1C/W Thjc (bottom) then:
 
 75/(10+2+1.1) = 5.73W
-5.73W/9V = 365mA
+5.73W/9V = 636mA
 
 10C/W is a big heatsink! most smaller heatsinks for a TO220 package are rated at around 20C/W 
 20 + 2 + 1.1 = 23.1 C/W so the either difference is negligible or somwthing is awry with the calculations or the power dissipation claims for the TO220 package used for the LM2940.
