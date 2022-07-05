@@ -1,0 +1,18 @@
+
+Waltech systems
+https://waltech.com/cszcms/wide-band-oxygen-sensor-project-report
+
+temperature measurement
+https://patents.google.com/patent/US6712054B2/en
+
+SLC free
+https://www.14point7.com/products/slc-free
+
+Silicon Chip
+http://www.siliconchip.com.au/Shop/6/759
+
+DIY-EFI
+http://www.diy-efi.org/wbo2/info.html
+
+Arduino
+https://github.com/Hell-Fire/WidebandO2
